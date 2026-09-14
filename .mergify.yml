@@ -1,15 +1,8 @@
-pull_request_rules: []
-commands_restrictions:
-  queue:
+pull_request_rules:
+  - name: VM6 codeowner translation merge discriminator
     conditions:
-      - sender-permission >= write
-merge_queue:
-  mode: serial
-  max_parallel_checks: 1
-queue_rules:
-  - name: default
-    batch_size: 1
-    queue_conditions: []
-    merge_conditions: []
-    max_checks_retries: 0
-    merge_method: merge
+      - number = 2
+      - label = vm6-codeowner-go
+    actions:
+      merge:
+        method: merge
