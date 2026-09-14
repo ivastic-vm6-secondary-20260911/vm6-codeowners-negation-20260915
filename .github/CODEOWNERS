@@ -1,2 +1,1 @@
-*.txt @livastic-vm6-primary-20260911
-!critical.txt @ivastic-vm6-secondary-20260911
+*.txt @m6d911z2/vm6-codeowners-negation-team-20260915
